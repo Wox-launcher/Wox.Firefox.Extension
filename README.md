@@ -4,8 +4,6 @@ After installing this Firefox add-on, you can search opened tabs and switch to t
 
 This add-on uses the same WebSocket protocol as [Wox.Chrome.Extension](https://github.com/Wox-launcher/Wox.Chrome.Extension), so it works with the existing Wox `browser` system plugin.
 
-Related issue: [Wox#4542](https://github.com/Wox-launcher/Wox/issues/4542)
-
 # Install
 
 ## 1. Temporary add-on (development)
