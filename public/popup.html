@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Wox</title>
+        <link rel="stylesheet" href="popup.css" />
+    </head>
+    <body>
+        <div class="panel">
+            <header class="header">
+                <div class="brand">
+                    <img class="logo" src="icon.png" alt="" />
+                    <div>
+                        <div class="title">Wox</div>
+                        <div class="subtitle">Firefox bridge</div>
+                    </div>
+                </div>
+                <div id="badge" class="badge is-offline">
+                    <span class="dot"></span>
+                    <span id="connected">Offline</span>
+                </div>
+            </header>
+
+            <label class="field">
+                <span class="field-label">Server port</span>
+                <input
+                    id="port"
+                    type="text"
+                    inputmode="numeric"
+                    autocomplete="off"
+                    spellcheck="false"
+                    value="34988"
+                />
+            </label>
+
+            <div class="actions">
+                <button id="connect" type="button" class="btn btn-primary">Connect</button>
+                <button id="save" type="button" class="btn btn-ghost">Save</button>
+            </div>
+
+            <div class="meta">
+                <div id="endpoint" class="endpoint"></div>
+                <div id="status" class="status"></div>
+                <div id="error" class="error" hidden></div>
+            </div>
+        </div>
+        <script src="popup.js"></script>
+    </body>
+</html>
