@@ -4,15 +4,14 @@ ZIP := wox-firefox-extension.zip
 
 help:
 	@echo "Available commands:"
-	@echo "  make clean   - Remove build artifacts and node_modules"
+	@echo "  make clean   - Remove build artifacts"
 	@echo "  make build   - Build the extension and package dist/ into $(ZIP)"
 	@echo "  make install - Install dependencies"
 
 clean:
-	npm run clean
-	npm exec -- rimraf $(ZIP)
+	rm -rf dist $(ZIP)
 
-install: clean
+install:
 	npm install
 
 # Build the extension, then zip the dist/ directory contents into an
