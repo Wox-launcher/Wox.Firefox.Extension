@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Wox",
     "description": "Extends the web features of Wox for Firefox",
-    "version": "1.0.9",
+    "version": "1.1.0",
     "browser_action": {
         "default_icon": {
             "48": "icon-48.png",
